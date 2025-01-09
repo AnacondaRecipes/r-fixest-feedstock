@@ -39,22 +39,28 @@ requirements:
 
   host:
     - r-base {{ r_version }}
-    - r-rcpp >=1.0.5
-    - r-dreamerr >=1.4.0
+    #- r-rcpp >=1.0.5
+    - r-rcpp
+    #- r-dreamerr >=1.4.0
+    - r-dreamerr 
     - r-nlme
     - r-numderiv
     - r-sandwich
-    - r-stringmagic >=1.1.2
+    #- r-stringmagic >=1.1.2
+    - r-stringmagic 
 
   run:
     - r-base {{ r_version }}
     - {{native}}gcc-libs         # [win]
-    - r-rcpp >=1.0.5
-    - r-dreamerr >=1.4.0
+    #- r-rcpp >=1.0.5
+    - r-rcpp 
+    #- r-dreamerr >=1.4.0
+    - r-dreamerr 
     - r-nlme
     - r-numderiv
     - r-sandwich
-    - r-stringmagic >=1.1.2
+    #- r-stringmagic >=1.1.2
+    - r-stringmagic
 
 test:
   commands:
