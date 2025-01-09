@@ -38,7 +38,7 @@ requirements:
     - {{ posix }}zip               # [win]
 
   host:
-    - r-base {{ rbase }}
+    - r-base {{ r_version }}
     - r-rcpp >=1.0.5
     - r-dreamerr >=1.4.0
     - r-nlme
@@ -47,7 +47,7 @@ requirements:
     - r-stringmagic >=1.1.2
 
   run:
-    - r-base {{ rbase }}
+    - r-base {{ r_version }}
     - {{native}}gcc-libs         # [win]
     - r-rcpp >=1.0.5
     - r-dreamerr >=1.4.0
