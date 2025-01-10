@@ -49,7 +49,7 @@ requirements:
     - r-sandwich
     #- r-stringmagic >=1.1.2
     - r-stringmagic
-    - _openmp_mutex 
+   # - _openmp_mutex 
 
   run:
     - r-base {{ r_version }}
