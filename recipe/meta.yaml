@@ -18,7 +18,6 @@ build:
   # If this is a new build for the same version, increment the build number.
   number: 0
   # no skip
-  skip: # [win]
 
   # This is required to make R link correctly on Linux.
   rpaths:
@@ -49,7 +48,6 @@ requirements:
     - r-sandwich
     #- r-stringmagic >=1.1.2
     - r-stringmagic
-   # - _openmp_mutex 
 
   run:
     - r-base {{ r_version }}
