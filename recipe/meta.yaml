@@ -48,7 +48,8 @@ requirements:
     - r-numderiv
     - r-sandwich
     #- r-stringmagic >=1.1.2
-    - r-stringmagic 
+    - r-stringmagic
+    - _openmp_mutex 
 
   run:
     - r-base {{ r_version }}
@@ -62,6 +63,7 @@ requirements:
     - r-sandwich
     #- r-stringmagic >=1.1.2
     - r-stringmagic
+    - _openmp_mutex
 
 test:
   commands:
